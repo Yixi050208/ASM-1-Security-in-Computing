@@ -1,0 +1,125 @@
+family,method,input_size_bytes,scenario,expected_accepted,observed_accepted,expected_plaintext_returned,observed_plaintext_returned,expected_tampering_detected,observed_tampering_detected,key_establishment_inputs_held_constant,shared_aes_key_matches,verification_layer,exception_category,outcome_matches_expected
+hashing,SHA-256,1024,one_bit_modified_against_trusted_digest,False,False,False,False,True,True,,,trusted digest comparison,,True
+hashing,SHA-256,1024,replacement_against_protected_digest,False,False,False,False,True,True,,,protected trusted digest comparison,,True
+hashing,SHA-256,1024,replacement_with_unprotected_digest,True,True,False,False,False,False,,,attacker-supplied unprotected digest,,True
+hashing,SHA-256,1024,unchanged_against_trusted_digest,True,True,False,False,False,False,,,trusted digest comparison,,True
+hashing,SHA-256,10240,one_bit_modified_against_trusted_digest,False,False,False,False,True,True,,,trusted digest comparison,,True
+hashing,SHA-256,10240,replacement_against_protected_digest,False,False,False,False,True,True,,,protected trusted digest comparison,,True
+hashing,SHA-256,10240,replacement_with_unprotected_digest,True,True,False,False,False,False,,,attacker-supplied unprotected digest,,True
+hashing,SHA-256,10240,unchanged_against_trusted_digest,True,True,False,False,False,False,,,trusted digest comparison,,True
+hashing,SHA-256,102400,one_bit_modified_against_trusted_digest,False,False,False,False,True,True,,,trusted digest comparison,,True
+hashing,SHA-256,102400,replacement_against_protected_digest,False,False,False,False,True,True,,,protected trusted digest comparison,,True
+hashing,SHA-256,102400,replacement_with_unprotected_digest,True,True,False,False,False,False,,,attacker-supplied unprotected digest,,True
+hashing,SHA-256,102400,unchanged_against_trusted_digest,True,True,False,False,False,False,,,trusted digest comparison,,True
+hashing,SHA-256,1048576,one_bit_modified_against_trusted_digest,False,False,False,False,True,True,,,trusted digest comparison,,True
+hashing,SHA-256,1048576,replacement_against_protected_digest,False,False,False,False,True,True,,,protected trusted digest comparison,,True
+hashing,SHA-256,1048576,replacement_with_unprotected_digest,True,True,False,False,False,False,,,attacker-supplied unprotected digest,,True
+hashing,SHA-256,1048576,unchanged_against_trusted_digest,True,True,False,False,False,False,,,trusted digest comparison,,True
+hashing,SHA-256,10485760,one_bit_modified_against_trusted_digest,False,False,False,False,True,True,,,trusted digest comparison,,True
+hashing,SHA-256,10485760,replacement_against_protected_digest,False,False,False,False,True,True,,,protected trusted digest comparison,,True
+hashing,SHA-256,10485760,replacement_with_unprotected_digest,True,True,False,False,False,False,,,attacker-supplied unprotected digest,,True
+hashing,SHA-256,10485760,unchanged_against_trusted_digest,True,True,False,False,False,False,,,trusted digest comparison,,True
+hashing,SHA-512,1024,one_bit_modified_against_trusted_digest,False,False,False,False,True,True,,,trusted digest comparison,,True
+hashing,SHA-512,1024,replacement_against_protected_digest,False,False,False,False,True,True,,,protected trusted digest comparison,,True
+hashing,SHA-512,1024,replacement_with_unprotected_digest,True,True,False,False,False,False,,,attacker-supplied unprotected digest,,True
+hashing,SHA-512,1024,unchanged_against_trusted_digest,True,True,False,False,False,False,,,trusted digest comparison,,True
+hashing,SHA-512,10240,one_bit_modified_against_trusted_digest,False,False,False,False,True,True,,,trusted digest comparison,,True
+hashing,SHA-512,10240,replacement_against_protected_digest,False,False,False,False,True,True,,,protected trusted digest comparison,,True
+hashing,SHA-512,10240,replacement_with_unprotected_digest,True,True,False,False,False,False,,,attacker-supplied unprotected digest,,True
+hashing,SHA-512,10240,unchanged_against_trusted_digest,True,True,False,False,False,False,,,trusted digest comparison,,True
+hashing,SHA-512,102400,one_bit_modified_against_trusted_digest,False,False,False,False,True,True,,,trusted digest comparison,,True
+hashing,SHA-512,102400,replacement_against_protected_digest,False,False,False,False,True,True,,,protected trusted digest comparison,,True
+hashing,SHA-512,102400,replacement_with_unprotected_digest,True,True,False,False,False,False,,,attacker-supplied unprotected digest,,True
+hashing,SHA-512,102400,unchanged_against_trusted_digest,True,True,False,False,False,False,,,trusted digest comparison,,True
+hashing,SHA-512,1048576,one_bit_modified_against_trusted_digest,False,False,False,False,True,True,,,trusted digest comparison,,True
+hashing,SHA-512,1048576,replacement_against_protected_digest,False,False,False,False,True,True,,,protected trusted digest comparison,,True
+hashing,SHA-512,1048576,replacement_with_unprotected_digest,True,True,False,False,False,False,,,attacker-supplied unprotected digest,,True
+hashing,SHA-512,1048576,unchanged_against_trusted_digest,True,True,False,False,False,False,,,trusted digest comparison,,True
+hashing,SHA-512,10485760,one_bit_modified_against_trusted_digest,False,False,False,False,True,True,,,trusted digest comparison,,True
+hashing,SHA-512,10485760,replacement_against_protected_digest,False,False,False,False,True,True,,,protected trusted digest comparison,,True
+hashing,SHA-512,10485760,replacement_with_unprotected_digest,True,True,False,False,False,False,,,attacker-supplied unprotected digest,,True
+hashing,SHA-512,10485760,unchanged_against_trusted_digest,True,True,False,False,False,False,,,trusted digest comparison,,True
+hashing,SHA3-256,1024,one_bit_modified_against_trusted_digest,False,False,False,False,True,True,,,trusted digest comparison,,True
+hashing,SHA3-256,1024,replacement_against_protected_digest,False,False,False,False,True,True,,,protected trusted digest comparison,,True
+hashing,SHA3-256,1024,replacement_with_unprotected_digest,True,True,False,False,False,False,,,attacker-supplied unprotected digest,,True
+hashing,SHA3-256,1024,unchanged_against_trusted_digest,True,True,False,False,False,False,,,trusted digest comparison,,True
+hashing,SHA3-256,10240,one_bit_modified_against_trusted_digest,False,False,False,False,True,True,,,trusted digest comparison,,True
+hashing,SHA3-256,10240,replacement_against_protected_digest,False,False,False,False,True,True,,,protected trusted digest comparison,,True
+hashing,SHA3-256,10240,replacement_with_unprotected_digest,True,True,False,False,False,False,,,attacker-supplied unprotected digest,,True
+hashing,SHA3-256,10240,unchanged_against_trusted_digest,True,True,False,False,False,False,,,trusted digest comparison,,True
+hashing,SHA3-256,102400,one_bit_modified_against_trusted_digest,False,False,False,False,True,True,,,trusted digest comparison,,True
+hashing,SHA3-256,102400,replacement_against_protected_digest,False,False,False,False,True,True,,,protected trusted digest comparison,,True
+hashing,SHA3-256,102400,replacement_with_unprotected_digest,True,True,False,False,False,False,,,attacker-supplied unprotected digest,,True
+hashing,SHA3-256,102400,unchanged_against_trusted_digest,True,True,False,False,False,False,,,trusted digest comparison,,True
+hashing,SHA3-256,1048576,one_bit_modified_against_trusted_digest,False,False,False,False,True,True,,,trusted digest comparison,,True
+hashing,SHA3-256,1048576,replacement_against_protected_digest,False,False,False,False,True,True,,,protected trusted digest comparison,,True
+hashing,SHA3-256,1048576,replacement_with_unprotected_digest,True,True,False,False,False,False,,,attacker-supplied unprotected digest,,True
+hashing,SHA3-256,1048576,unchanged_against_trusted_digest,True,True,False,False,False,False,,,trusted digest comparison,,True
+hashing,SHA3-256,10485760,one_bit_modified_against_trusted_digest,False,False,False,False,True,True,,,trusted digest comparison,,True
+hashing,SHA3-256,10485760,replacement_against_protected_digest,False,False,False,False,True,True,,,protected trusted digest comparison,,True
+hashing,SHA3-256,10485760,replacement_with_unprotected_digest,True,True,False,False,False,False,,,attacker-supplied unprotected digest,,True
+hashing,SHA3-256,10485760,unchanged_against_trusted_digest,True,True,False,False,False,False,,,trusted digest comparison,,True
+hybrid,FFDHE3072+HKDF-SHA256+AES-256-GCM,1024,one_bit_aes_gcm_payload_change,False,False,False,False,True,True,True,True,shared AES-GCM payload authentication,authentication_failed,True
+hybrid,FFDHE3072+HKDF-SHA256+AES-256-GCM,1024,valid_key_and_payload_round_trip,True,True,True,True,False,False,True,True,hybrid key establishment plus shared AES-GCM,,True
+hybrid,FFDHE3072+HKDF-SHA256+AES-256-GCM,10240,one_bit_aes_gcm_payload_change,False,False,False,False,True,True,True,True,shared AES-GCM payload authentication,authentication_failed,True
+hybrid,FFDHE3072+HKDF-SHA256+AES-256-GCM,10240,valid_key_and_payload_round_trip,True,True,True,True,False,False,True,True,hybrid key establishment plus shared AES-GCM,,True
+hybrid,FFDHE3072+HKDF-SHA256+AES-256-GCM,102400,one_bit_aes_gcm_payload_change,False,False,False,False,True,True,True,True,shared AES-GCM payload authentication,authentication_failed,True
+hybrid,FFDHE3072+HKDF-SHA256+AES-256-GCM,102400,valid_key_and_payload_round_trip,True,True,True,True,False,False,True,True,hybrid key establishment plus shared AES-GCM,,True
+hybrid,FFDHE3072+HKDF-SHA256+AES-256-GCM,1048576,one_bit_aes_gcm_payload_change,False,False,False,False,True,True,True,True,shared AES-GCM payload authentication,authentication_failed,True
+hybrid,FFDHE3072+HKDF-SHA256+AES-256-GCM,1048576,valid_key_and_payload_round_trip,True,True,True,True,False,False,True,True,hybrid key establishment plus shared AES-GCM,,True
+hybrid,FFDHE3072+HKDF-SHA256+AES-256-GCM,10485760,one_bit_aes_gcm_payload_change,False,False,False,False,True,True,True,True,shared AES-GCM payload authentication,authentication_failed,True
+hybrid,FFDHE3072+HKDF-SHA256+AES-256-GCM,10485760,valid_key_and_payload_round_trip,True,True,True,True,False,False,True,True,hybrid key establishment plus shared AES-GCM,,True
+hybrid,RSA-3072-OAEP-SHA256-MGF1-SHA256+AES-256-GCM,1024,one_bit_aes_gcm_payload_change,False,False,False,False,True,True,True,True,shared AES-GCM payload authentication,authentication_failed,True
+hybrid,RSA-3072-OAEP-SHA256-MGF1-SHA256+AES-256-GCM,1024,valid_key_and_payload_round_trip,True,True,True,True,False,False,True,True,hybrid key establishment plus shared AES-GCM,,True
+hybrid,RSA-3072-OAEP-SHA256-MGF1-SHA256+AES-256-GCM,10240,one_bit_aes_gcm_payload_change,False,False,False,False,True,True,True,True,shared AES-GCM payload authentication,authentication_failed,True
+hybrid,RSA-3072-OAEP-SHA256-MGF1-SHA256+AES-256-GCM,10240,valid_key_and_payload_round_trip,True,True,True,True,False,False,True,True,hybrid key establishment plus shared AES-GCM,,True
+hybrid,RSA-3072-OAEP-SHA256-MGF1-SHA256+AES-256-GCM,102400,one_bit_aes_gcm_payload_change,False,False,False,False,True,True,True,True,shared AES-GCM payload authentication,authentication_failed,True
+hybrid,RSA-3072-OAEP-SHA256-MGF1-SHA256+AES-256-GCM,102400,valid_key_and_payload_round_trip,True,True,True,True,False,False,True,True,hybrid key establishment plus shared AES-GCM,,True
+hybrid,RSA-3072-OAEP-SHA256-MGF1-SHA256+AES-256-GCM,1048576,one_bit_aes_gcm_payload_change,False,False,False,False,True,True,True,True,shared AES-GCM payload authentication,authentication_failed,True
+hybrid,RSA-3072-OAEP-SHA256-MGF1-SHA256+AES-256-GCM,1048576,valid_key_and_payload_round_trip,True,True,True,True,False,False,True,True,hybrid key establishment plus shared AES-GCM,,True
+hybrid,RSA-3072-OAEP-SHA256-MGF1-SHA256+AES-256-GCM,10485760,one_bit_aes_gcm_payload_change,False,False,False,False,True,True,True,True,shared AES-GCM payload authentication,authentication_failed,True
+hybrid,RSA-3072-OAEP-SHA256-MGF1-SHA256+AES-256-GCM,10485760,valid_key_and_payload_round_trip,True,True,True,True,False,False,True,True,hybrid key establishment plus shared AES-GCM,,True
+hybrid,X25519+HKDF-SHA256+AES-256-GCM,1024,one_bit_aes_gcm_payload_change,False,False,False,False,True,True,True,True,shared AES-GCM payload authentication,authentication_failed,True
+hybrid,X25519+HKDF-SHA256+AES-256-GCM,1024,valid_key_and_payload_round_trip,True,True,True,True,False,False,True,True,hybrid key establishment plus shared AES-GCM,,True
+hybrid,X25519+HKDF-SHA256+AES-256-GCM,10240,one_bit_aes_gcm_payload_change,False,False,False,False,True,True,True,True,shared AES-GCM payload authentication,authentication_failed,True
+hybrid,X25519+HKDF-SHA256+AES-256-GCM,10240,valid_key_and_payload_round_trip,True,True,True,True,False,False,True,True,hybrid key establishment plus shared AES-GCM,,True
+hybrid,X25519+HKDF-SHA256+AES-256-GCM,102400,one_bit_aes_gcm_payload_change,False,False,False,False,True,True,True,True,shared AES-GCM payload authentication,authentication_failed,True
+hybrid,X25519+HKDF-SHA256+AES-256-GCM,102400,valid_key_and_payload_round_trip,True,True,True,True,False,False,True,True,hybrid key establishment plus shared AES-GCM,,True
+hybrid,X25519+HKDF-SHA256+AES-256-GCM,1048576,one_bit_aes_gcm_payload_change,False,False,False,False,True,True,True,True,shared AES-GCM payload authentication,authentication_failed,True
+hybrid,X25519+HKDF-SHA256+AES-256-GCM,1048576,valid_key_and_payload_round_trip,True,True,True,True,False,False,True,True,hybrid key establishment plus shared AES-GCM,,True
+hybrid,X25519+HKDF-SHA256+AES-256-GCM,10485760,one_bit_aes_gcm_payload_change,False,False,False,False,True,True,True,True,shared AES-GCM payload authentication,authentication_failed,True
+hybrid,X25519+HKDF-SHA256+AES-256-GCM,10485760,valid_key_and_payload_round_trip,True,True,True,True,False,False,True,True,hybrid key establishment plus shared AES-GCM,,True
+supplemental_control,HMAC-SHA-256,1024,modified_file_against_protected_hmac,False,False,False,False,True,True,,,protected HMAC key and original tag,,True
+supplemental_control,HMAC-SHA-256,1024,replacement_file_against_protected_digest,False,False,False,False,True,True,,,protected original SHA-256 digest,,True
+supplemental_control,HMAC-SHA-256,1024,replacement_file_with_unprotected_digest,True,True,False,False,False,False,,,attacker-supplied unprotected SHA-256 digest,,True
+supplemental_control,HMAC-SHA-256,1024,valid_hmac_reference,True,True,False,False,False,False,,,protected HMAC key and tag,,True
+symmetric,AES-256-GCM,1024,one_bit_ciphertext_change,False,False,False,False,True,True,,,AEAD payload authentication,authentication_failed,True
+symmetric,AES-256-GCM,1024,valid_control,True,True,True,True,False,False,,,AEAD decryption,,True
+symmetric,AES-256-GCM,10240,one_bit_ciphertext_change,False,False,False,False,True,True,,,AEAD payload authentication,authentication_failed,True
+symmetric,AES-256-GCM,10240,valid_control,True,True,True,True,False,False,,,AEAD decryption,,True
+symmetric,AES-256-GCM,102400,one_bit_ciphertext_change,False,False,False,False,True,True,,,AEAD payload authentication,authentication_failed,True
+symmetric,AES-256-GCM,102400,valid_control,True,True,True,True,False,False,,,AEAD decryption,,True
+symmetric,AES-256-GCM,1048576,one_bit_ciphertext_change,False,False,False,False,True,True,,,AEAD payload authentication,authentication_failed,True
+symmetric,AES-256-GCM,1048576,valid_control,True,True,True,True,False,False,,,AEAD decryption,,True
+symmetric,AES-256-GCM,10485760,one_bit_ciphertext_change,False,False,False,False,True,True,,,AEAD payload authentication,authentication_failed,True
+symmetric,AES-256-GCM,10485760,valid_control,True,True,True,True,False,False,,,AEAD decryption,,True
+symmetric,AES-256-GCM-SIV,1024,one_bit_ciphertext_change,False,False,False,False,True,True,,,AEAD payload authentication,authentication_failed,True
+symmetric,AES-256-GCM-SIV,1024,valid_control,True,True,True,True,False,False,,,AEAD decryption,,True
+symmetric,AES-256-GCM-SIV,10240,one_bit_ciphertext_change,False,False,False,False,True,True,,,AEAD payload authentication,authentication_failed,True
+symmetric,AES-256-GCM-SIV,10240,valid_control,True,True,True,True,False,False,,,AEAD decryption,,True
+symmetric,AES-256-GCM-SIV,102400,one_bit_ciphertext_change,False,False,False,False,True,True,,,AEAD payload authentication,authentication_failed,True
+symmetric,AES-256-GCM-SIV,102400,valid_control,True,True,True,True,False,False,,,AEAD decryption,,True
+symmetric,AES-256-GCM-SIV,1048576,one_bit_ciphertext_change,False,False,False,False,True,True,,,AEAD payload authentication,authentication_failed,True
+symmetric,AES-256-GCM-SIV,1048576,valid_control,True,True,True,True,False,False,,,AEAD decryption,,True
+symmetric,AES-256-GCM-SIV,10485760,one_bit_ciphertext_change,False,False,False,False,True,True,,,AEAD payload authentication,authentication_failed,True
+symmetric,AES-256-GCM-SIV,10485760,valid_control,True,True,True,True,False,False,,,AEAD decryption,,True
+symmetric,ChaCha20-Poly1305,1024,one_bit_ciphertext_change,False,False,False,False,True,True,,,AEAD payload authentication,authentication_failed,True
+symmetric,ChaCha20-Poly1305,1024,valid_control,True,True,True,True,False,False,,,AEAD decryption,,True
+symmetric,ChaCha20-Poly1305,10240,one_bit_ciphertext_change,False,False,False,False,True,True,,,AEAD payload authentication,authentication_failed,True
+symmetric,ChaCha20-Poly1305,10240,valid_control,True,True,True,True,False,False,,,AEAD decryption,,True
+symmetric,ChaCha20-Poly1305,102400,one_bit_ciphertext_change,False,False,False,False,True,True,,,AEAD payload authentication,authentication_failed,True
+symmetric,ChaCha20-Poly1305,102400,valid_control,True,True,True,True,False,False,,,AEAD decryption,,True
+symmetric,ChaCha20-Poly1305,1048576,one_bit_ciphertext_change,False,False,False,False,True,True,,,AEAD payload authentication,authentication_failed,True
+symmetric,ChaCha20-Poly1305,1048576,valid_control,True,True,True,True,False,False,,,AEAD decryption,,True
+symmetric,ChaCha20-Poly1305,10485760,one_bit_ciphertext_change,False,False,False,False,True,True,,,AEAD payload authentication,authentication_failed,True
+symmetric,ChaCha20-Poly1305,10485760,valid_control,True,True,True,True,False,False,,,AEAD decryption,,True

@@ -1,0 +1,74 @@
+Phase 3 official data collection and analysis evidence
+Date: 2026-11-21 local session
+
+Workspace:
+C:\Users\Win\Documents\A1_Cryptography
+
+Checkpoint confirmed before collection:
+- A prior smoke benchmark checkpoint existed; scratch smoke outputs are not
+  retained in the repository.
+- data\runs\functional_20261120\functional_checks.csv: 124 rows
+- Functional unexpected outcomes: 0
+- No complete benchmark_full run existed before this session.
+
+Fixture verification command:
+  .\.venv\Scripts\python.exe scripts\generate_inputs.py
+
+Observed fixture sizes:
+- data\inputs\input_1KiB.bin: 1,024 bytes (already existed)
+- data\inputs\input_10KiB.bin: 10,240 bytes (already existed)
+- data\inputs\input_100KiB.bin: 102,400 bytes (already existed)
+- data\inputs\input_1MiB.bin: 1,048,576 bytes (already existed)
+- data\inputs\input_10MiB.bin: 10,485,760 bytes (already existed)
+
+Commands run:
+1. .\.venv\Scripts\python.exe -m py_compile scripts\analyze.py scripts\benchmark.py scripts\functional_checks.py scripts\experiment_common.py
+2. .\.venv\Scripts\python.exe scripts\generate_inputs.py
+3. .\.venv\Scripts\python.exe scripts\benchmark.py --profile full --seed 20261120 --output-dir data\runs\benchmark_full_20261120_official_20261121
+4. .\.venv\Scripts\python.exe scripts\analyze.py --benchmark-csv data\runs\benchmark_full_20261120_official_20261121\benchmark.csv --metadata data\runs\benchmark_full_20261120_official_20261121\benchmark_metadata.json --functional-csv data\runs\functional_20261120\functional_checks.csv --functional-metadata data\runs\functional_20261120\functional_checks_metadata.json --output-dir data\analysis\full_20261120_official_20261121 --expected-profile full
+
+Official run metadata:
+- Run ID: full_20261120T191526Z_7e351974
+- Profile: full
+- Random seed: 20261120
+- Warm-up batches per method and size: 5
+- Measured batches per method and size: 30
+- Methods: 9
+- Input sizes: 1,024; 10,240; 102,400; 1,048,576; 10,485,760 bytes
+- Benchmark rows: 1,350
+- Benchmark CSV SHA-256: e9991e8bd320e1c8846bf5e4ed64e32a36c17df1143a7321f657e583c4f85e7e
+- Functional CSV SHA-256: d85ab9c7ed291b1ffb7687d5c7c263303dfb0c70d71da3da0d2cb53cc54405d3
+
+Validation and analysis:
+- validation_report.json status: passed
+- Functional rows: 124; all expected outcomes matched
+- Descriptive rows: 75
+- Overhead rows: 45
+- Verification matrix rows: 124
+- Primary size-effect rows: 9
+- Run-order diagnostic rows: 27
+- SVG figures: hashing_timing.svg, symmetric_timing.svg, hybrid_timing.svg, hybrid_breakdown.svg
+
+Environment recorded in benchmark_metadata.json:
+- Windows-11-10.0.26300-SP0, AMD64, CPython 3.14.0
+- cryptography 50.0.2; OpenSSL 3.0.18
+- perf_counter implementation: QueryPerformanceCounter(), monotonic
+
+The exact RFC 7919 ffdhe3072 configuration completed successfully. The
+cryptography library emitted its finite-field DH deprecation warning during
+the run; no algorithm substitution was made.
+
+Saved official outputs:
+- data\runs\benchmark_full_20261120_official_20261121\benchmark.csv
+- data\runs\benchmark_full_20261120_official_20261121\benchmark_metadata.json
+- data\analysis\full_20261120_official_20261121\validation_report.json
+- data\analysis\full_20261120_official_20261121\analysis_summary.json
+- data\analysis\full_20261120_official_20261121\descriptive_statistics.csv
+- data\analysis\full_20261120_official_20261121\size_effect_statistics.csv
+- data\analysis\full_20261120_official_20261121\overhead_table.csv
+- data\analysis\full_20261120_official_20261121\verification_outcome_matrix.csv
+- data\analysis\full_20261120_official_20261121\run_order_diagnostics.csv
+- data\analysis\full_20261120_official_20261121\hashing_timing.svg
+- data\analysis\full_20261120_official_20261121\symmetric_timing.svg
+- data\analysis\full_20261120_official_20261121\hybrid_timing.svg
+- data\analysis\full_20261120_official_20261121\hybrid_breakdown.svg

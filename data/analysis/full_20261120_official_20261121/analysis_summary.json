@@ -1,0 +1,19 @@
+{
+  "created_utc": "20261120T191605Z",
+  "descriptive_statistics": "data\\analysis\\full_20261120_official_20261121\\descriptive_statistics.csv",
+  "functional_row_count": 124,
+  "inferential_analysis": "nine separate blocked repeated-measures ANOVAs with Greenhouse-Geisser correction and Holm correction across methods",
+  "overhead_table": "data\\analysis\\full_20261120_official_20261121\\overhead_table.csv",
+  "plots": {
+    "hashing": "data\\analysis\\full_20261120_official_20261121\\hashing_timing.svg",
+    "hybrid": "data\\analysis\\full_20261120_official_20261121\\hybrid_timing.svg",
+    "hybrid_breakdown": "data\\analysis\\full_20261120_official_20261121\\hybrid_breakdown.svg",
+    "symmetric": "data\\analysis\\full_20261120_official_20261121\\symmetric_timing.svg"
+  },
+  "profile": "full",
+  "row_count": 1350,
+  "run_order_diagnostics": "data\\analysis\\full_20261120_official_20261121\\run_order_diagnostics.csv",
+  "size_effect_statistics": "data\\analysis\\full_20261120_official_20261121\\size_effect_statistics.csv",
+  "status": "complete",
+  "verification_outcome_matrix": "data\\analysis\\full_20261120_official_20261121\\verification_outcome_matrix.csv"
+}

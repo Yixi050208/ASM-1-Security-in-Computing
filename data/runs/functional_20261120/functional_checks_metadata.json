@@ -1,0 +1,52 @@
+{
+  "all_outcomes_match_expected": true,
+  "created_utc": "2026-11-20T11:36:21.630696+00:00",
+  "environment": {
+    "logical_cpu_count": 16,
+    "machine": "AMD64",
+    "openssl": "OpenSSL 3.0.18 30 Sep 2025",
+    "os": "Windows-11-10.0.26300-SP0",
+    "packages": {
+      "cryptography": "50.0.2",
+      "matplotlib": null,
+      "scipy": null
+    },
+    "perf_counter": {
+      "adjustable": false,
+      "implementation": "QueryPerformanceCounter()",
+      "monotonic": true,
+      "resolution_seconds": 1e-07
+    },
+    "processor": "AMD64 Family 25 Model 117 Stepping 2, AuthenticAMD",
+    "python": "3.14.0 (tags/v3.14.0:ebf955d, Oct  7 2025, 10:15:03) [MSC v.1944 64 bit (AMD64)]",
+    "python_implementation": "CPython"
+  },
+  "expected_rows": 124,
+  "experiment": "local synthetic functional verification checks",
+  "ffdhe_group": "RFC 7919 ffdhe3072, g=2, exact 3072-bit modulus in experiment_common.py",
+  "hybrid_tamper_policy": "flip one ciphertext bit while holding key-establishment inputs constant; rejection is attributed to the shared AES-GCM layer",
+  "input_sizes_bytes": [
+    1024,
+    10240,
+    102400,
+    1048576,
+    10485760
+  ],
+  "methods": [
+    "SHA-256",
+    "SHA-512",
+    "SHA3-256",
+    "AES-256-GCM",
+    "ChaCha20-Poly1305",
+    "AES-256-GCM-SIV",
+    "RSA-3072-OAEP-SHA256-MGF1-SHA256+AES-256-GCM",
+    "X25519+HKDF-SHA256+AES-256-GCM",
+    "FFDHE3072+HKDF-SHA256+AES-256-GCM"
+  ],
+  "observed_rows": 124,
+  "raw_csv": "data\\runs\\functional_20261120\\functional_checks.csv",
+  "run_id": "functional_20261120T113620Z_3c64a2d5",
+  "status": "complete",
+  "supplemental_control": "HMAC-SHA-256",
+  "timing": "not measured"
+}
