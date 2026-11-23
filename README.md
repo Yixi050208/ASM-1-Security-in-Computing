@@ -3,25 +3,39 @@
 Security-in-Computing assignment measuring hashing, authenticated encryption,
 hybrid encryption, tamper detection, and file-size effects.
 
-## Layout
+## Repository layout
 
-- `scripts/` — experiment runners and shared utilities
-- `data/inputs/` — deterministic synthetic fixtures
-- `data/runs/` — official benchmark and functional-run outputs
-- `data/analysis/` — validated analysis outputs
-- `evidence/` — official collection notes
-- `tests/` — test documentation
+- `scripts/` - experiment runners and shared utilities
+- `data/inputs/` - deterministic synthetic test fixtures
+- `data/runs/` - official benchmark and functional-check outputs
+- `data/analysis/` - validated summaries, statistics, and figures
+- `tests/` - test documentation
+- `hashing/`, `symmetric/`, `asymmetric/` - topic notes
 
-## Reproduce
+## Setup
 
-See [REPRODUCE.md](REPRODUCE.md) for Windows commands and environment details.
-The official collection is `full_20261120T191526Z_7e351974`.
+```powershell
+python -m pip install -r requirements.txt
+```
 
-Useful outputs:
+## Run the checks
 
-- [Validation report](data/analysis/full_20261120_official_20261121/validation_report.json)
-- [Size-effect statistics](data/analysis/full_20261120_official_20261121/size_effect_statistics.csv)
-- [Verification outcomes](data/analysis/full_20261120_official_20261121/verification_outcome_matrix.csv)
+```powershell
+python scripts/generate_inputs.py
+python scripts/functional_checks.py --output-dir data/runs/functional_local
+```
 
-Scratch experiments, report exports, presentation material, and author-specific
+Run the official benchmark with `scripts/benchmark.py`, then analyze its
+outputs with `scripts/analyze.py`. Existing official outputs are available in
+`data/runs/benchmark_full_20261120_official_20261121/` and
+`data/analysis/full_20261120_official_20261121/`.
+
+## Key outputs
+
+- `validation_report.json` - validation status for the official analysis
+- `size_effect_statistics.csv` - file-size effect statistics
+- `verification_outcome_matrix.csv` - tamper and verification outcomes
+- `*_timing.svg` - report-ready timing figures
+
+Scratch experiments, report exports, presentation files, and author-specific
 artifacts are intentionally not tracked.
